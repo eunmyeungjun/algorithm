@@ -1,6 +1,6 @@
 
-package 그리디
-/*
+package greedy
+
 fun main( ) =with(System.`in`.bufferedReader()){
         val n = readln().toInt()
         val homeArray = readln().toCharArray()
@@ -9,4 +9,3 @@ fun main( ) =with(System.`in`.bufferedReader()){
 
             println(homeArray[(n-1)/2])
 }
- */

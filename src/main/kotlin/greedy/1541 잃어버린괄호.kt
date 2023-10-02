@@ -1,5 +1,5 @@
 package greedy
-/*
+
 fun main() = with(System.`in`.bufferedReader()) {
     val number = readLine()
     val listOfNumbers = number.split("-").toList()
@@ -20,6 +20,6 @@ fun main() = with(System.`in`.bufferedReader()) {
     println(answer)
 }
 
-*/
+
 
 

@@ -1,5 +1,5 @@
-package 그리디
-/*
+package implementation
+
 import java.util.Stack
 
 fun main() = with(System.`in`.bufferedReader()){
@@ -35,4 +35,4 @@ fun main() = with(System.`in`.bufferedReader()){
 
 }
 
- */
+

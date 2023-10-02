@@ -1,4 +1,4 @@
-package 그리디
+package implementation
 /*
 
 fun main()=with(System.`in`.bufferedReader()) {

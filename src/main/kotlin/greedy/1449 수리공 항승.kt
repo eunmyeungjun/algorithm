@@ -1,6 +1,4 @@
-
-package 그리디
-/*
+package greedy
 fun main()=with(System.`in`.bufferedReader()){
     val (n,l)=readln().split(" ").map{it.toInt()}
     val hole =readln().split(" ").map{it.toInt()}.toIntArray()
@@ -18,4 +16,3 @@ fun main()=with(System.`in`.bufferedReader()){
     println(tape)
 }
 
-*/

@@ -1,10 +1,10 @@
-package 그리디
-/*
+package greedy
+
 import java.util.Scanner
 
 fun main(){
     val sc:Scanner =Scanner(System.`in`)
-    val ropes =sc.nextInt()
+
 
     val ropes = readLine()?.split(" ")?.mapNotNull { it.toInt() } ?: emptyList()
 
@@ -21,4 +21,4 @@ fun main(){
         println("$heavyWeight")
    }
 }
-*/
+
