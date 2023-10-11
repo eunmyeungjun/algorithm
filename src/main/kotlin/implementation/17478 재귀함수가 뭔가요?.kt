@@ -27,7 +27,8 @@ fun reply (times :Int,repeatCount :Int){
     reply(times-1,repeatCount+1)
     underBar(repeatCount)
     println("라고 답변하였지.")
-}fun underBar(times: Int){
+}
+fun underBar(times: Int){
     for (times in 0 until  times){
         print("____")
     }

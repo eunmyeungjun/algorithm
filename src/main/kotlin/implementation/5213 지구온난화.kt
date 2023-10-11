@@ -9,6 +9,7 @@ fun main()= with(System.`in`.bufferedReader()) {
     }
     val dx = intArrayOf(0, 1, 0, -1)
     val dy = intArrayOf(1, 0, -1, 0)
+
     var minR = 10
     var maxR = 0
     var minC = 10
