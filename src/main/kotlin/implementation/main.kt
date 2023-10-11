@@ -16,12 +16,3 @@ repeat(paperCount){
     }
     println(answer)
 }
-
-
-
-
-
-
-
-
-
