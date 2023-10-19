@@ -2,6 +2,7 @@ package implementation
 
 import java.util.*
 
+/*
 fun main()= with(System.`in`.bufferedReader()){
     val gears = Array<LinkedList<Char>>(4) { LinkedList() }
     for (i in 0 until 4) {
@@ -44,15 +45,13 @@ fun main()= with(System.`in`.bufferedReader()){
                     }
 
                 }
-                1->if(gears[0][2]==gears[1][6]){
-                    rotate(gears,1)
-                    continue
-                }
-                    else {rotate(gears,1)
-                    deRotate(gears,0)
-                    continue
-
-
+                1-> when(gears[1][6]==gears[0][2]){
+                   true -> when(gears[1][2]==gears[2][6]){
+                       true-> rotate(gears,1)
+                       else->
+                       }
+                   }
+                       else->
                 }
 
             }
@@ -64,7 +63,6 @@ fun main()= with(System.`in`.bufferedReader()){
         }
 
     }
-
 fun rotate(gears : Array<LinkedList<Char>>,i :Int,) {
     gears[i].addFirst(gears[i].removeLast())
 }
@@ -74,41 +72,7 @@ fun deRotate(gears: Array<LinkedList<Char>>, i: Int){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 이거 코드가 너무너무너무 길어지는데?
+이거 코드가 너무너무너무 길어지는데?
 fun main()=with(System.`in`.bufferedReader()) {
     val gearFirst = readln().toMutableList().toCharArray()
     val gearSecond = readln().toMutableList().toCharArray()
