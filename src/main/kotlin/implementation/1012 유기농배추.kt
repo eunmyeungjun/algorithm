@@ -1,13 +1,11 @@
 package implementation
-/*
+/* 단순반복시에 repeat 사용,변수를 받는 문자가 중복이라서 오류발생 <-코드고치기
 fun main()=with(System.`in`.bufferedReader()) {
     val T = readln().toInt()
     val dx = listOf(0,0,1,-1)
     val dy =listOf(1,-1,0,0)
 
-
-
-    for(i in 0 until T) {
+       for(i in 0 until T) {
         var answer =0
         val (m, n, k) = readln().split(" ").map { it.toInt() }
         val farm = Array(m) { Array<Int>(n) { 0 } }
@@ -40,18 +38,18 @@ fun main()=with(System.`in`.bufferedReader()) {
     }
 }
  */
-fun main() {
+fun main()=with(System.`in`.bufferedReader()) {
     val T = readLine()!!.toInt()
     val dx = listOf(0, 0, 1, -1)
     val dy = listOf(1, -1, 0, 0)
 
     repeat(T) {
         var answer = 0
-        val (m, n, k) = readLine()!!.split(" ").map { it.toInt() }
+        val (m, n, k) = readln().split(" ").map { it.toInt() }
         val farm = Array(m) { Array(n) { 0 } }
 
         repeat(k) {
-            val (q, r) = readLine()!!.split(" ").map { it.toInt() }
+            val (q, r) = readln().split(" ").map { it.toInt() }
             farm[q][r] = 1
         }
 
@@ -67,7 +65,6 @@ fun main() {
                 }
             }
         }
-
         for (k in 0 until m) {
             for (l in 0 until n) {
                 if (farm[k][l] == 1) {
@@ -77,7 +74,6 @@ fun main() {
                 }
             }
         }
-
         println(answer)
     }
 }
