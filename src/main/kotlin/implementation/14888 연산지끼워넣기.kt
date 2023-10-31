@@ -28,11 +28,10 @@ fun main()=with(System.`in`.bufferedReader()){
             calculate(answer/numbers[repeat],repeat+1,plus,minus,times,divide-1)
         }
 
-
     }
+
+
     calculate(numbers[0],1,plus,minus,times,divide)
     println(max)
     println(min)
-
-
 }

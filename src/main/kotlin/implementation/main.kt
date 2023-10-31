@@ -1,12 +1,7 @@
 package implementation
 
+import java.util.Scanner
+
 fun main()=with(System.`in`.bufferedReader()){
-    var num =4
-    var answer =0
-    var count =0
-
-
+        val a=readLine().toInt()
 }
-
-
-
