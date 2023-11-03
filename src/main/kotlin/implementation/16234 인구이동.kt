@@ -29,14 +29,20 @@ fun main()=with(System.`in`.bufferedReader()){
             val avg=people/nation
             pop[x][y]=avg
             var moved=true
-        }
     }
+
     var day =0
     while(true){
+        if (moved==false){
+            break
+
+        }
+    }
         for(l in 0 until N){
             for(m in 0 until N){
                 var nation =1
                 check(l,m, 1)
+
             }
         }
     }

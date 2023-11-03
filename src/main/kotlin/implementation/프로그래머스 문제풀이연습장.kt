@@ -1,39 +1,19 @@
 package implementation
-fun solution(n: Int, m: Int): IntArray {
-    var answer = intArrayOf(0,0)
-    var min =0; var max=0
-    var b =0 ; var s =0
 
-    if(n==m){
-        answer[0]=1
-        answer[1]=n
-        return answer
-    }
-    if(n>m){
-        b=n; s=m
-    }else{
-        b=m; s=n }
-    while(true){
-        if (b%s==0){
-            max=s
-            break
-        }
-        if(b%s==1){
-            max=1
-            break
-        }
-        if(b%s != 0){
-            var now=b
-            b=s
-            s=now%s
+fun solution(t: String, p: String): Int {
+    var answer: Int = 0
+
+    for (i in 0 until t.length - p.length + 1) {
+        val sub = t.substring(i, i + p.length)
+        if (sub.toLong() <= p.toLong()) {
+            answer++
         }
     }
-    min=n*m/max
-    answer[0]=max
-    answer[1]=min
+
     return answer
 }
-fun main(){
-    val answer= solution(3,12)
-    println(answer)
+fun main() {
+    var result =solution("3141592","271")
+    println(result)
+    println()
 }
