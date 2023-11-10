@@ -17,7 +17,7 @@ fun main()=with(System.`in`.bufferedReader()){
     var now =Array(N){IntArray(M)}
 
     fun diceRoll(x:Int,y:Int){
-        var B=0;
+        var B=0
         var C=0
         var dir=0
         when(dir){
