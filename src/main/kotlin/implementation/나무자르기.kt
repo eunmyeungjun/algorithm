@@ -1,6 +1,4 @@
 package implementation
-
-
 fun main() = with(System.`in`.bufferedReader()){
     val(N , M) = readLine().split(" ").map { it.toInt() }
     val tree = readLine().split(" ").map { it.toInt() }.toIntArray().sorted()
@@ -26,5 +24,4 @@ fun main() = with(System.`in`.bufferedReader()){
         }
     }
     println(min)
-
 }
