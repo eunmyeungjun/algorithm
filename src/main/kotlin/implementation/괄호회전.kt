@@ -9,11 +9,14 @@ fun main() {
     val stack = Stack<Char>()
     val S = s.map { it }.toMutableList()
 
-    repeat(S.size ) {
+    repeat(S.size) {
+
         val temp = S[0]
         for (i in 0 until S.size -1){
             S[i] = S[i+1]
+
         }
+
         S[S.size -1] = temp
 
         S.forEach {
@@ -41,7 +44,6 @@ fun main() {
                         stack.pop()
                     } else stack.push(it)
                 }
-
             }
         }
         if (stack.isEmpty()){
@@ -50,7 +52,6 @@ fun main() {
         stack.clear()
     }
     println(answer)
-
 }
 
 
