@@ -14,6 +14,7 @@ fun main() = with(System.`in`.bufferedReader()) {
         val slimeQ = PriorityQueue<Long>()
         slimeQ.addAll(slime)
         var slimeEnergy = 1L
+      
 
         while (true) {
             if (slimeQ.size == 1) {
@@ -29,7 +30,6 @@ fun main() = with(System.`in`.bufferedReader()) {
         bw.write("${slimeEnergy}\n")
     }
     bw.close()
-
 }
 
 

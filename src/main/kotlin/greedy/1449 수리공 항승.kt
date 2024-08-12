@@ -4,7 +4,7 @@ fun main()=with(System.`in`.bufferedReader()){
     val hole =readln().split(" ").map{it.toInt()}.toIntArray()
     val sortedHole =hole.sorted()
     var tape =1
-    var tapeStart = sortedHole[0]- 0.5
+    val tapeStart = sortedHole[0]- 0.5
     var tapeEnd = tapeStart +l
 
     for (i in sortedHole) {
